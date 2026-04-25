@@ -68,12 +68,20 @@ public class AppPickerActivity extends AppCompatActivity {
                 List<ApplicationInfo> infos = pm.getInstalledApplications(PackageManager.GET_META_DATA);
                 List<AppInfo> list = new ArrayList<>();
                 for (ApplicationInfo info : infos) {
-                    // Only show user-installed and launchable apps
-                    if (pm.getLaunchIntentForPackage(info.packageName) == null) continue;
+                    // Show user-installed apps always
+                    // Show system apps only if they have a launch intent (avoid noise)
+                    boolean isUserApp = (info.flags & ApplicationInfo.FLAG_SYSTEM) == 0;
+                    boolean isLaunchable = pm.getLaunchIntentForPackage(info.packageName) != null;
+                    if (!isUserApp && !isLaunchable) continue;
+
                     AppInfo a = new AppInfo();
                     a.packageName = info.packageName;
                     a.label       = pm.getApplicationLabel(info).toString();
-                    a.icon        = pm.getApplicationIcon(info);
+                    try {
+                        a.icon = pm.getApplicationIcon(info);
+                    } catch (Exception e) {
+                        a.icon = pm.getDefaultActivityIcon();
+                    }
                     list.add(a);
                 }
                 list.sort(Comparator.comparing(x -> x.label.toLowerCase()));

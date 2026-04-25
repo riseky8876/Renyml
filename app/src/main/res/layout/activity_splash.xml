@@ -36,7 +36,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/splashSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
@@ -55,7 +54,6 @@
             android:progressDrawable="@drawable/progress_glow" />
 
         <TextView
-            android:id="@+id/splashLoading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

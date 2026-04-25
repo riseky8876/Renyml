@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Genshin Performance Manager</string>
+    <string name="app_subtitle">by Xueyin with Furina</string>
+    <string name="app_loading">Memuat…</string>
+
+    <string name="status_ok">Aplikasi Berfungsi</string>
+    <string name="status_error">Aplikasi Error</string>
+    <string name="device_info_format">CPU: %1$s%%   RAM: %2$s</string>
+
+    <string name="btn_run_esp">Jalankan Dengan ESP</string>
+    <string name="btn_run_no_esp">Jalankan Tanpa ESP</string>
+    <string name="btn_restore">Restore ke Normal</string>
+    <string name="btn_freeze">Freeze Apps</string>
+
+    <string name="log_title">Log Real-time</string>
+    <string name="log_clear">Bersihkan Log</string>
+    <string name="log_empty">Belum ada log…</string>
+    <string name="log_path_hint">/sdcard/GenshinPerf/logs/app_log.txt</string>
+
+    <string name="tab_main">Main</string>
+    <string name="tab_network">Network</string>
+
+    <string name="net_wifi">WiFi</string>
+    <string name="net_cell">Data Seluler</string>
+    <string name="net_other">Lainnya</string>
+    <string name="net_apply">Terapkan</string>
+    <string name="net_revert">Kembalikan</string>
+    <string name="net_status">Status</string>
+    <string name="net_restore">Restore</string>
+    <string name="preset_gaming">Gaming</string>
+    <string name="preset_download">Download</string>
+    <string name="preset_streaming">Streaming</string>
+    <string name="preset_upload">Upload</string>
+    <string name="desc_gaming">Low latency</string>
+    <string name="desc_download">Max throughput</string>
+    <string name="desc_streaming">Stabil bandwidth</string>
+    <string name="desc_upload">Prioritas upload</string>
+    <string name="net_pick_preset_first">Pilih preset dulu</string>
+
+    <string name="menu_settings">Pengaturan</string>
+    <string name="menu_about">Tentang</string>
+    <string name="menu_smart_profile">Smart Profile</string>
+    <string name="menu_per_app">Per-App Optimization</string>
+
+    <string name="settings_background">Latar Belakang</string>
+    <string name="settings_pick_bg">Pilih dari Galeri</string>
+    <string name="settings_default_bg">Gunakan Default Furina</string>
+    <string name="settings_blur">Intensitas Blur</string>
+    <string name="settings_header">Header</string>
+    <string name="settings_pick_header">Pilih Header dari Galeri</string>
+    <string name="settings_default_header">Gunakan Header Default</string>
+    <string name="settings_header_height">Tinggi Header</string>
+    <string name="settings_avatar">Avatar (logo kiri atas)</string>
+    <string name="settings_pick_avatar">Pilih Avatar dari Galeri</string>
+    <string name="settings_default_avatar">Gunakan Ikon Default Furina</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_accent">Warna Aksen</string>
+    <string name="settings_dark_mode">Mode Gelap</string>
+    <string name="settings_log_section">Log</string>
+    <string name="settings_auto_scroll">Auto-scroll log</string>
+    <string name="settings_max_lines">Maks. baris log</string>
+    <string name="settings_clear_all_logs">Bersihkan Semua Log</string>
+    <string name="settings_script">Path Script</string>
+    <string name="settings_script_hint">/sdcard/GenshinPerf/main.sh</string>
+    <string name="settings_save">Simpan</string>
+    <string name="settings_saved">Pengaturan disimpan</string>
+
+    <string name="about_version">v2.0</string>
+    <string name="about_description">Aplikasi ini dibuat untuk mengoptimalkan performa perangkat Android saat bermain Genshin Impact. Fitur meliputi CPU/GPU performance lock, affinity management, app freezer, dan ESP launcher.</string>
+    <string name="about_developer">Developer: xueyin</string>
+    <string name="about_support">Dengan dukungan: Furina</string>
+    <string name="about_features_title">Fitur</string>
+
+    <string name="crash_log_title">Crash Log</string>
+    <string name="crash_dialog_msg">Aplikasi mengalami crash sebelumnya. Lihat crash log?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="share">Bagikan</string>
+    <string name="delete">Hapus</string>
+    <string name="crash_deleted">Crash log dihapus</string>
+</resources>

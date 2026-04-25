@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_main"
+        android:icon="@drawable/ic_tab_main"
+        android:title="Main" />
+    <item
+        android:id="@+id/tab_network"
+        android:icon="@drawable/ic_tab_network"
+        android:title="Network" />
+</menu>

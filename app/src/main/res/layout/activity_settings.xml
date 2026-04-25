@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView style="@style/SectionTitle" android:text="@string/settings_background" />
+        <ImageView
+            android:id="@+id/bgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/card_bg"
+            android:scaleType="centerCrop"
+            android:contentDescription="@null" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnPickBg" style="@style/SecondaryBtn"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_pick_bg" 
+                android:textColor="#FFFFFF"/>
+            <Space android:layout_width="8dp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnDefaultBg" style="@style/SecondaryBtn"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_default_bg" 
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <TextView style="@style/FieldLabel" android:text="@string/settings_blur" />
+        <SeekBar android:id="@+id/blurSeek" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:max="25" android:progress="6" />
+
+        <TextView style="@style/SectionTitle" android:text="@string/settings_header" />
+        <ImageView
+            android:id="@+id/headerPreview"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/card_bg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header_default"
+            android:contentDescription="@null" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnPickHeader" style="@style/SecondaryBtn"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_pick_header" 
+                android:textColor="#FFFFFF"/>
+            <Space android:layout_width="8dp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnDefaultHeader" style="@style/SecondaryBtn"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_default_header" 
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <TextView style="@style/FieldLabel" android:text="@string/settings_header_height" />
+        <SeekBar android:id="@+id/headerHeightSeek" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:max="320" android:progress="180" />
+
+        <TextView style="@style/SectionTitle" android:text="@string/settings_avatar" />
+        <ImageView
+            android:id="@+id/avatarPreview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/furina"
+            android:contentDescription="@null" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:orientation="horizontal">
+            <Button android:id="@+id/btnPickAvatar" style="@style/SecondaryBtn"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_pick_avatar" 
+                android:textColor="#FFFFFF"/>
+            <Space android:layout_width="8dp" android:layout_height="match_parent" />
+            <Button android:id="@+id/btnDefaultAvatar" style="@style/SecondaryBtn"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_default_avatar" 
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <TextView style="@style/SectionTitle" android:text="@string/settings_theme" />
+        <TextView style="@style/FieldLabel" android:text="@string/settings_accent" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+            <View android:id="@+id/accentCyan"   android:layout_width="42dp" android:layout_height="42dp"
+                android:layout_marginEnd="10dp" android:background="#6FD6FF" />
+            <View android:id="@+id/accentGold"   android:layout_width="42dp" android:layout_height="42dp"
+                android:layout_marginEnd="10dp" android:background="#F2D17E" />
+            <View android:id="@+id/accentPink"   android:layout_width="42dp" android:layout_height="42dp"
+                android:layout_marginEnd="10dp" android:background="#F6B8E2" />
+            <View android:id="@+id/accentPurple" android:layout_width="42dp" android:layout_height="42dp"
+                android:background="#5B4BA8" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView style="@style/FieldLabel" android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_dark_mode" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/darkSwitch"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <TextView style="@style/SectionTitle" android:text="@string/settings_log_section" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView style="@style/FieldLabel" android:layout_width="0dp" android:layout_weight="1"
+                android:text="@string/settings_auto_scroll" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/autoScrollSwitch"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+        <TextView style="@style/FieldLabel" android:text="@string/settings_max_lines" />
+        <RadioGroup android:id="@+id/maxLinesGroup" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/lines100"  android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="100"  android:textColor="@color/text_primary"/>
+            <RadioButton android:id="@+id/lines500"  android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="500"  android:textColor="@color/text_primary"
+                android:checked="true" android:layout_marginStart="14dp"/>
+            <RadioButton android:id="@+id/lines1000" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="1000" android:textColor="@color/text_primary"
+                android:layout_marginStart="14dp"/>
+        </RadioGroup>
+        <Button android:id="@+id/btnClearAllLogs" style="@style/SecondaryBtn"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:text="@string/settings_clear_all_logs" 
+                android:textColor="#FFFFFF"/>
+
+        <TextView style="@style/SectionTitle" android:text="@string/settings_script" />
+        <EditText android:id="@+id/scriptPath" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@drawable/btn_secondary"
+            android:padding="12dp" android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary" android:hint="@string/settings_script_hint" />
+
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+            android:layout_height="56dp" android:layout_marginTop="20dp"
+            android:background="@drawable/btn_glow" android:text="@string/settings_save"
+            android:textAllCaps="false" android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

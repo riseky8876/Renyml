@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light blue / white palette (Furina light variant) -->
+    <color name="furina_deep">#0F2E5C</color>     <!-- navy text / dark accent -->
+    <color name="furina_blue">#1E88E5</color>     <!-- primary blue -->
+    <color name="furina_purple">#5B6FE0</color>   <!-- secondary accent -->
+    <color name="furina_cyan">#1976D2</color>     <!-- active emphasis -->
+    <color name="furina_gold">#FB8C00</color>     <!-- warning orange -->
+    <color name="furina_pink">#3D5AFE</color>     <!-- highlight blue -->
+
+    <color name="bg_dark">#F4F8FF</color>         <!-- screen bg -->
+    <color name="bg_card">#FFFFFFFF</color>
+    <color name="bg_card_soft">#FFEAF3FF</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="border_glow">#33B0CFF0</color>
+    <color name="divider">#FFE4ECF6</color>
+
+    <color name="text_primary">#0F2E5C</color>    <!-- navy -->
+    <color name="text_secondary">#5471A3</color>  <!-- grey-blue -->
+    <color name="text_muted">#8AA0C0</color>
+
+    <color name="status_ok">#2E7D32</color>
+    <color name="status_warn">#E65100</color>
+    <color name="status_err">#C62828</color>
+    <color name="log_warn">#EF6C00</color>
+
+    <color name="chip_ok_bg">#FFE3F5E5</color>
+    <color name="chip_err_bg">#FFFCE6E6</color>
+
+    <color name="pill_default_bg">#FFEAF3FF</color>
+    <color name="pill_selected_bg">#FF1E88E5</color>
+    <color name="pill_selected_text">#FFFFFFFF</color>
+
+    <color name="toast_ok_bg">#FFD9ECFF</color>
+    <color name="toast_err_bg">#FFFFE0E0</color>
+</resources>

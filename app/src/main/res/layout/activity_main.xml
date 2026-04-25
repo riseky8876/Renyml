@@ -736,7 +736,7 @@
         android:layout_gravity="start"
         android:background="#FFFFFFFF"
         android:fitsSystemWindows="true"
-        android:itemTextColor="@color/text_primary"
-        android:itemIconTint="@color/furina_blue"
+        app:itemTextColor="@color/text_primary"
+        app:itemIconTint="@color/furina_blue"
         app:menu="@menu/drawer_menu" />
 </androidx.drawerlayout.widget.DrawerLayout>
